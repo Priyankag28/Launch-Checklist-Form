@@ -48,9 +48,9 @@ window.addEventListener("load", function() {
 
       }
       else if (isNaN(parseFloat(cargoMass.value))) {
-       alert("Cargo Mass is Not a Number");
-       event.preventDefault();
-       }
+        alert("Cargo Mass is Not a Number");
+        event.preventDefault();
+       } else{
 
        let faultyItems = document.getElementById("faultyItems");
        let launchStatus = document.getElementById("launchStatus");
@@ -88,7 +88,7 @@ window.addEventListener("load", function() {
            launchStatus.style.color = "green";
            event.preventDefault();
        }
-
+       }
 
    });
 });
